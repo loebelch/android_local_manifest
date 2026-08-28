@@ -1,4 +1,4 @@
-### Device specific configuration to build AOSP Android 17 for Raspberry Pi 4 and Raspberry Pi 5.
+### Device specific configuration to build AOSP Android 17 for (~~Raspberry Pi 4 and~~) Raspberry Pi 5.
 
 ***
 
@@ -35,11 +35,13 @@ repo sync
 . build/envsetup.sh
 ```
 
-6. Select the device (`rpi4` or `rpi5`) and build target (tablet UI, `tv` for Android TV, or `car` for Android Automotive):
+6. Step 1: Linux Kernel:
 
-```
-lunch aosp_rpi4_car-cp2a-userdebug
-```
+Also look into [Linux kernel build instructions](https://github.com/raspberry-vanilla/android_kernel_manifest/tree/android-17.0).
+
+
+6. Step 2: Select the device (`rpi5`) and build target (`car` for Android Automotive):
+
 ```
 lunch aosp_rpi5_car-cp2a-userdebug
 ```
@@ -50,16 +52,11 @@ lunch aosp_rpi5_car-cp2a-userdebug
 make bootimage systemimage vendorimage -j$(nproc)
 ```
 
-8. Make flashable image for the device (`rpi4` or `rpi5`):
+8. Make flashable image for the device (`rpi5`):
 
-```
-./rpi4-mkimg.sh
-```
 ```
 ./rpi5-mkimg.sh
 ```
-
-Also look into [Linux kernel build instructions](https://github.com/raspberry-vanilla/android_kernel_manifest/tree/android-17.0).
 
 ***
 
