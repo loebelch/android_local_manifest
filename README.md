@@ -18,9 +18,9 @@ clone and removing unneeded projects:
 
 ```
 repo init -u https://android.googlesource.com/platform/manifest -b android-17.0.0_r1 --depth=1
-curl -o .repo/local_manifests/manifest_brcm_rpi.xml -L https://raw.githubusercontent.com/raspberry-vanilla/android_local_manifest/android-17.0/manifest_brcm_rpi.xml --create-dirs
-curl -o .repo/local_manifests/remove_projects.xml -L https://raw.githubusercontent.com/raspberry-vanilla/android_local_manifest/android-17.0/remove_projects.xml
-curl -o .repo/local_manifests/manifest_utilities.xml -L https://raw.githubusercontent.com/raspberry-vanilla/android_local_manifest/android-16.0/manifest_utilities.xml
+curl -o .repo/local_manifests/manifest_brcm_rpi.xml -L https://raw.githubusercontent.com/loebelch/android_local_manifest/android-17.0/manifest_brcm_rpi.xml --create-dirs
+curl -o .repo/local_manifests/remove_projects.xml -L https://raw.githubusercontent.com/loebelch/android_local_manifest/android-17.0/remove_projects.xml
+curl -o .repo/local_manifests/manifest_utilities.xml -L https://raw.githubusercontent.com/loebelch/android_local_manifest/android-17.0/manifest_utilities.xml
 ```
 
 4. Sync source code:
@@ -38,19 +38,7 @@ repo sync
 6. Select the device (`rpi4` or `rpi5`) and build target (tablet UI, `tv` for Android TV, or `car` for Android Automotive):
 
 ```
-lunch aosp_rpi4-cp2a-userdebug
-```
-```
-lunch aosp_rpi4_tv-cp2a-userdebug
-```
-```
 lunch aosp_rpi4_car-cp2a-userdebug
-```
-```
-lunch aosp_rpi5-cp2a-userdebug
-```
-```
-lunch aosp_rpi5_tv-cp2a-userdebug
 ```
 ```
 lunch aosp_rpi5_car-cp2a-userdebug
