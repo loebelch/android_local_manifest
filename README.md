@@ -14,17 +14,13 @@ sudo apt-get install dosfstools e2fsprogs fdisk kpartx mtools rsync
 
 3. Initialize repo:
 
-```
-repo init -u https://android.googlesource.com/platform/manifest -b android-17.0.0_r1
-curl -o .repo/local_manifests/manifest_brcm_rpi.xml -L https://raw.githubusercontent.com/raspberry-vanilla/android_local_manifest/android-17.0/manifest_brcm_rpi.xml --create-dirs
-```
-
-Or optionally, you can reduce download size by creating a shallow clone and removing unneeded projects:
+clone and removing unneeded projects:
 
 ```
 repo init -u https://android.googlesource.com/platform/manifest -b android-17.0.0_r1 --depth=1
 curl -o .repo/local_manifests/manifest_brcm_rpi.xml -L https://raw.githubusercontent.com/raspberry-vanilla/android_local_manifest/android-17.0/manifest_brcm_rpi.xml --create-dirs
 curl -o .repo/local_manifests/remove_projects.xml -L https://raw.githubusercontent.com/raspberry-vanilla/android_local_manifest/android-17.0/remove_projects.xml
+curl -o .repo/local_manifests/manifest_utilities.xml -L https://raw.githubusercontent.com/raspberry-vanilla/android_local_manifest/android-16.0/manifest_utilities.xml
 ```
 
 4. Sync source code:
