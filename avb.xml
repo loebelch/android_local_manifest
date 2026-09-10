@@ -1,0 +1,4 @@
+<manifest>
+  <remote name="lptp" fetch="https://github.com/richardcochran/" />
+  <project name="linuxptp" path="external/linuxptp" remote="lptp" revision="refs/tags/v4.4" />
+</manifest>
