@@ -21,6 +21,7 @@ repo init -u https://android.googlesource.com/platform/manifest -b android-17.0.
 curl -o .repo/local_manifests/manifest_brcm_rpi.xml -L https://raw.githubusercontent.com/loebelch/android_local_manifest/android-17.0/manifest_brcm_rpi.xml --create-dirs
 curl -o .repo/local_manifests/remove_projects.xml -L https://raw.githubusercontent.com/loebelch/android_local_manifest/android-17.0/remove_projects.xml
 curl -o .repo/local_manifests/manifest_utilities.xml -L https://raw.githubusercontent.com/loebelch/android_local_manifest/android-17.0/manifest_utilities.xml
+curl -o .repo/local_manifests/avb.xml -L https://raw.githubusercontent.com/loebelch/android_local_manifest/android-17.0/avb.xml
 ```
 
 4. Sync source code:
