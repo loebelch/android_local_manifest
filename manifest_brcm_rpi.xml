@@ -3,17 +3,12 @@
   <remote name="github" fetch="https://github.com/" />
 
   <!-- Raspberry Pi -->
-  <project path="device/brcm/rpi4" name="raspberry-vanilla/android_device_brcm_rpi4" remote="github" revision="android-17.0" >
-    <linkfile src="mkimg.sh" dest="rpi4-mkimg.sh" />
-    <linkfile src="wrimg.sh" dest="rpi4-wrimg.sh" />
-  </project>
   <project path="device/brcm/rpi5" name="loebelch/android_device_brcm_rpi5" remote="github" revision="android-17.0" >
     <linkfile src="mkimg.sh" dest="rpi5-mkimg.sh" />
     <linkfile src="wrimg.sh" dest="rpi5-wrimg.sh" />
   </project>
-  <project path="device/brcm/rpi4-kernel" name="raspberry-vanilla/android_device_brcm_rpi4-kernel" remote="github" revision="android-17.0" />
-  <project path="device/brcm/rpi5-kernel" name="raspberry-vanilla/android_device_brcm_rpi5-kernel" remote="github" revision="android-17.0" />
-  <project path="vendor/brcm" name="raspberry-vanilla/proprietary_vendor_brcm" remote="github" revision="android-17.0" />
+  <project path="device/brcm/rpi5-kernel" name="loebelch/android_device_brcm_rpi5-kernel" remote="github" revision="android-17.0" />
+  <project path="vendor/brcm" name="loebelch/proprietary_vendor_brcm" remote="github" revision="android-17.0" />
 
   <!-- Audio -->
   <project path="external/alsa-lib" name="raspberry-vanilla/android_external_alsa-lib" remote="github" revision="android-17.0" />
