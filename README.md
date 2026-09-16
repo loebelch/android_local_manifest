@@ -38,7 +38,7 @@ repo sync
 
 6. Step 1: Linux Kernel:
 
-Also look into [Linux kernel build instructions](https://github.com/raspberry-vanilla/android_kernel_manifest/tree/android-17.0).
+Also look into [Linux kernel build instructions](https://github.com/loebelch/android_kernel_manifest/tree/android-17.0).
 
 
 6. Step 2: Select the device (`rpi5`) and build target (`car` for Android Automotive):
