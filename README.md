@@ -1,4 +1,4 @@
-### Device specific configuration to build AOSP Android 17 for (~~Raspberry Pi 4 and~~) Raspberry Pi 5.
+### Device specific configuration to build AOSP Android 17 for Raspberry Pi 5.
 
 ***
 
