@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="lptp" fetch="https://github.com/richardcochran/" />
-  <project name="linuxptp" path="external/linuxptp" remote="lptp" revision="refs/tags/v4.4" />
+  <remote name="github" fetch="https://github.com/" />
+  <project path="external/linuxptp" name="richardcochran/linuxptp" remote="github" revision="refs/tags/v4.4" />
+  <project path="external/linuxptp" name="loebelch/aaos-config" remote="github" revision="main" />
+  </project>
 </manifest>
