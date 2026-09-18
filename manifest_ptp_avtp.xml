@@ -2,7 +2,7 @@
 <manifest>
   <remote name="github" fetch="https://github.com/" />
   <project path="external/linuxptp" name="nwtime/linuxptp" remote="github" revision="refs/tags/v4.4" />
-  <project path="external/libavtp" name="Avnu/linuxptp" remote="github" revision="master" />
+  <project path="external/libavtp" name="Avnu/libavtp" remote="github" revision="master" />
   <project path="aaos-config" name="loebelch/aaos-config" remote="github" revision="main" >
     <copyfile src="linuxptp/Android.bp.linuxptp" dest="external/linuxptp/Android.bp" />
     <copyfile src="linuxptp/gptp.cfg" dest="device/brcm/rpi5/car/gptp.cfg" />
