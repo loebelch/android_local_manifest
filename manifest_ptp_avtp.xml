@@ -12,5 +12,6 @@
     <copyfile src="libavtp/METADATA.libavtp" dest="external/libavtp/METADATA" />
     <copyfile src="libavtp/android/argp.h" dest="external/libavtp/android/argp.h" />
     <copyfile src="libavtp/android/argp.c" dest="external/libavtp/android/argp.c" />
+    <copyfile src="libavtp/examples/aaf-talker2.c" dest="external/libavtp/examples/aaf-talker2.c" />
   </project>
 </manifest>
