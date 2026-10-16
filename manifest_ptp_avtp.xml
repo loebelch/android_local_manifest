@@ -14,5 +14,6 @@
     <copyfile src="libavtp/android/argp.c" dest="external/libavtp/android/argp.c" />
     <copyfile src="libavtp/examples/aaf-talker2.c" dest="external/libavtp/examples/aaf-talker2.c" />
     <copyfile src="alsa-lib/config.h" dest="external/alsa-lib/include/config.h" />
+    <copyfile src="alsa-plugins/Android.bp.alsa-plugins" dest="external/alsa-plugins/Android.bp" />
   </project>
 </manifest>
